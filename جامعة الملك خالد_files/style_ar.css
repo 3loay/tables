@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* CSS Document */
+
+a.backButton {
+   width: 56pt;
+   height:17pt;
+   background:url(images/back.gif) no-repeat center center ;
+   display : block;
+}
+a.deleteButton {
+   width: 56pt;
+   height:17pt;
+   background:url(images/delete.gif) no-repeat center center ;
+    display : block;
+}
+a.editButton {
+   width: 56pt;
+   height:17pt;
+   background:url(images/edit.gif) no-repeat center center ;
+    display : block;
+   
+}
+a.saveButton {
+   width: 56pt;
+   height:17pt;
+   background:url(images/save.gif) no-repeat center center ;
+    display : block;
+}
+a.loginButton {
+   width: 56pt;
+   height:17pt;
+   background:url(images/login.gif) no-repeat center center ;
+    display : block;
+     float: left;
+}
+a.addButton {
+   width: 56pt;
+   height:17pt;
+   background:url(images/add.gif) no-repeat center center ;
+    display : block;
+}
+a.acceptButton {
+   width: 56pt;
+   height:17pt;
+   background:url(images/accept.gif) no-repeat center center ;
+    display : block;
+}
+a.declineButton {
+   width: 56pt;
+   height:17pt;
+   background:url(images/Decline.gif) no-repeat center center ;
+    display : block;
+}
+a.printButton {
+   width: 45pt;
+   height:17pt;
+   background:url(images/print.gif) no-repeat center center ;
+    display : block;
+}
+a.ncaaaButton {
+   width: 45pt;
+   height:17pt;
+   background:url(images/statistic.png) no-repeat center center ;
+    display : block;
+}
+
+.finishButton{
+       width: 56pt;
+   height:17pt;
+   background:url(images/end.gif) no-repeat center center ;
+    display : block;
+}
+.nextButton{
+       width: 56pt;
+   height:17pt;
+   background:url(images/next.gif) no-repeat center center ;
+    display : block;
+}
+.nextButton2{
+   padding: 5px 400px 0 163px;
+   width: 106pt;
+   height:17pt;
+   background:url(images/next_3.gif) no-repeat center center ;
+   display : block;
+}
+.sendButton{
+       width: 56pt;
+   height:17pt;
+   background:url(images/send.gif) no-repeat center center ;
+    display : block;
+}
+.voteButton{
+       width: 56pt;
+   height:17pt;
+   background:url(images/vote.gif) no-repeat center center ;
+    display : block;
+}  
+.resultVoteButton{
+       width: 56pt;
+   height:17pt;
+   background:url(images/Result_Vote.gif) no-repeat center center ;
+    display : block;
+} 
+.showButton{
+    width: 56pt;
+   height:17pt;
+   background:url(images/view.gif) no-repeat center center ;
+    display : block;
+}
+.newButton{
+       width: 56pt;
+   height:17pt;
+   background:url(images/new.gif) no-repeat center center ;
+    display : block;
+}
+.resultButton{
+       width: 56pt;
+   height:17pt;
+   background:url(images/result.gif) no-repeat center center ;
+    display : block;
+}
+.insertButton{
+       width: 56pt;
+   height:17pt;
+   background:url(images/insert.gif) no-repeat center center ;
+   display : block;
+   
+}
+.confirmtButton{
+       width: 56pt;
+   height:17pt;
+   background:url(images/Confirm.gif) no-repeat center center ;
+    display : block;
+} 
+.submitButton{
+    width: 56pt;
+    height:17pt;
+    background:url(images/Submit.gif) no-repeat center center ;
+    display : block;
+} 
+.excelExportButton{
+       width: 56pt;
+   height:17pt;
+   background:url(images/Excel_Export.gif) no-repeat center center ;
+ display : block;
+}
+.hiddenButton{
+       width: 56pt;
+   height:17pt;
+   background:url(images/Hidden.gif) no-repeat center center ;
+ display : block;
+}
+.priviessemesterButton{
+       width: 56pt;
+   height:17pt;
+   background:url(images/Privies_semester.gif) no-repeat center center ;
+    display : block;
+}
+.uploadButton{
+       width: 56pt;
+   height:17pt;
+   background:url(images/Upload.gif) no-repeat center center ;
+    display : block;
+}
+.refreshButton{
+       width: 56pt;
+   height:17pt;
+   background:url(images/Refresh.gif) no-repeat center center ;
+    display : block;
+}
+.homeButton{
+       width: 80pt;
+   height:17pt;
+   background:url(images/backHomeAr.gif) no-repeat center center ;
+    display : block;
+
+}
+.undoButton{
+       width: 70pt;
+   height:17pt;
+   background:url(images/undoAr.gif) no-repeat center center ;
+    display : block;
+
+}
+.deleteAllButton{
+       width: 56pt;
+   height:17pt;
+   background:url(images/deleteAllAr.gif) no-repeat center center ;
+    display : block;
+
+}
+
+.evalListTable > tbody > tr {
+    display: table-cell;
+}
