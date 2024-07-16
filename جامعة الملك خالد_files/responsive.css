@@ -1,0 +1,797 @@
+#cssmenu,#cssmenu #menu-button,#cssmenu ul,#cssmenu ul li,#cssmenu ul li a {
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+#cssmenu:after,#cssmenu>ul:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+
+#cssmenu #menu-button {
+    display: none
+}
+
+#cssmenu {
+    padding: 0 10px;
+    width: auto;
+    font-family: 'Open Sans',sans-serif;
+    line-height: 1
+}
+
+#menu-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: #009ae1;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -ms-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out
+}
+
+#cssmenu>ul>li {
+    float: left
+}
+
+#cssmenu.align-center>ul {
+    font-size: 0;
+    text-align: center
+}
+
+#cssmenu.align-center>ul>li {
+    display: inline-block;
+    float: none
+}
+
+#cssmenu.align-center ul ul {
+    text-align: left
+}
+
+#cssmenu.align-right>ul>li {
+    float: right
+}
+
+#cssmenu.align-right ul ul {
+    text-align: right
+}
+
+#cssmenu>ul>li>a {
+    padding: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    -webkit-transition: color .2s ease;
+    -moz-transition: color .2s ease;
+    -ms-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease
+}
+
+#cssmenu>ul>li.active>a,#cssmenu>ul>li:hover>a {
+    color: #FFF
+}
+
+#cssmenu>ul>li.has-sub>a {
+    padding-right: 25px
+}
+
+#cssmenu>ul>li.has-sub>a::after {
+    position: absolute;
+    top: 21px;
+    right: 10px;
+    width: 4px;
+    height: 4px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    content: "";
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: border-color .2s ease;
+    -moz-transition: border-color .2s ease;
+    -ms-transition: border-color .2s ease;
+    -o-transition: border-color .2s ease;
+    transition: border-color .2s ease
+}
+
+#cssmenu>ul>li.has-sub:hover>a::after {
+    border-color: #009ae1
+}
+
+#cssmenu ul ul {
+    position: absolute;
+    left: -9999px
+}
+
+#cssmenu li:hover>ul {
+    left: auto
+}
+
+#cssmenu.align-right li:hover>ul {
+    right: 0
+}
+
+#cssmenu ul ul ul {
+    margin-left: 100%;
+    top: 0
+}
+
+#cssmenu.align-right ul ul ul {
+    margin-left: 0;
+    margin-right: 100%
+}
+
+#cssmenu ul ul li {
+    height: 0;
+    -webkit-transition: height .2s ease;
+    -moz-transition: height .2s ease;
+    -ms-transition: height .2s ease;
+    -o-transition: height .2s ease;
+    transition: height .2s ease
+}
+
+#cssmenu ul li:hover>ul>li {
+    height: 32px
+}
+
+#cssmenu ul ul li a {
+    padding: 10px 20px;
+    width: 160px;
+    font-size: 12px;
+    background: #333;
+    text-decoration: none;
+    color: #ddd;
+    -webkit-transition: color .2s ease;
+    -moz-transition: color .2s ease;
+    -ms-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease
+}
+
+#cssmenu ul ul li a:hover,#cssmenu ul ul li:hover>a {
+    color: #fff
+}
+
+#cssmenu ul ul li.has-sub>a::after {
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    width: 4px;
+    height: 4px;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    content: "";
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transition: border-color .2s ease;
+    -moz-transition: border-color .2s ease;
+    -ms-transition: border-color .2s ease;
+    -o-transition: border-color .2s ease;
+    transition: border-color .2s ease
+}
+
+#cssmenu.align-right ul ul li.has-sub>a::after {
+    right: auto;
+    left: 10px;
+    border-bottom: 0;
+    border-right: 0;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd
+}
+
+#cssmenu ul ul li.has-sub:hover>a::after {
+    border-color: #fff
+}
+
+@media (max-width: 768px), (max-width:1024px), only screen and (-webkit-min-device-pixel-ratio:2) and (max-width:1024px),only screen and (min--moz-device-pixel-ratio:2) and (max-width:1024px),only screen and (-o-min-device-pixel-ratio:2/1) and (max-width:1024px),only screen and (min-device-pixel-ratio:2) and (max-width:1024px),only screen and (min-resolution:192dpi) and (max-width:1024px),only screen and (min-resolution:2dppx) and (max-width:1024px) {
+    #cssmenu {
+        padding-right:0;
+        width: 100%
+    }
+
+    #cssmenu ul {
+        z-index: 983;
+        width: 100%;
+        display: none
+    }
+
+    #cssmenu.align-center>ul,#cssmenu.align-right ul ul {
+        text-align: left
+    }
+
+    #cssmenu ul li,#cssmenu ul li:hover>ul>li,#cssmenu ul ul li {
+        background-color: #7DB700;
+        width: 100%;
+        height: auto;
+        border-top: 1px solid rgba(120,120,120,.15)
+    }
+
+    #cssmenu ul li a,#cssmenu ul ul li a {
+        width: 100%
+    }
+
+    #cssmenu.align-center>ul>li,#cssmenu.align-right>ul>li,#cssmenu>ul>li {
+        float: none;
+        display: block
+    }
+
+    #cssmenu ul ul li a {
+        padding: 20px 20px 20px 30px;
+        font-size: 12px;
+        color: #000;
+        background: 0 0
+    }
+
+    #cssmenu ul ul li a:hover,#cssmenu ul ul li:hover>a {
+        color: #000
+    }
+
+    #cssmenu ul ul ul li a {
+        padding-left: 40px
+    }
+
+    #cssmenu ul ul,#cssmenu ul ul ul {
+        position: relative;
+        left: 0;
+        right: auto;
+        width: 100%;
+        margin: 0
+    }
+
+    #cssmenu #menu-button::after,#cssmenu #menu-button::before {
+        content: '';
+        position: absolute;
+        right: 20px;
+        width: 20px
+    }
+
+    #cssmenu ul ul li.has-sub>a::after,#cssmenu>ul>li.has-sub>a::after,#menu-line {
+        display: none
+    }
+
+    #cssmenu #menu-button {
+        float: right;
+        display: block;
+        padding: 20px;
+        color: #000;
+        cursor: pointer;
+        font-size: 12px;
+        text-transform: uppercase
+    }
+
+    #cssmenu #menu-button::after {
+        top: 12px;
+        display: block;
+        height: 3px;
+        background: #fff
+    }
+
+    #cssmenu #menu-button::before {
+        top: 20px;
+        display: block;
+        height: 4px;
+        border-top: 3px solid #fff;
+        border-bottom: 3px solid #fff
+    }
+
+    #cssmenu .submenu-button {
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        top: 0;
+        display: block;
+        height: 52px;
+        width: 52px;
+        cursor: pointer
+    }
+
+    #cssmenu .submenu-button::after,#cssmenu .submenu-button::before {
+        content: '';
+        position: absolute;
+        display: block;
+        background: #000;
+        z-index: 99
+    }
+
+    #cssmenu .submenu-button::after {
+        top: 21px;
+        left: 26px;
+        width: 1px;
+        height: 11px
+    }
+
+    #cssmenu .submenu-button::before {
+        left: 21px;
+        top: 26px;
+        width: 11px;
+        height: 1px
+    }
+
+    #cssmenu .submenu-button.submenu-opened:after {
+        display: none
+    }
+}
+
+#menu-line {
+    display: none
+}
+
+@media (max-width: 768px), (max-width:1024px),only screen and (-webkit-min-device-pixel-ratio:2) and (max-width:1024px),only screen and (min--moz-device-pixel-ratio:2) and (max-width:1024px),only screen and (-o-min-device-pixel-ratio:2/1) and (max-width:1024px),only screen and (min-device-pixel-ratio:2) and (max-width:1024px),only screen and (min-resolution:192dpi) and (max-width:1024px),only screen and (min-resolution:2dppx) and (max-width:1024px) {
+    #main,.content {
+        margin-bottom:0
+    }
+
+    #footer-left-elemts,#footer-middle-elemts,.logo-content {
+        text-align: center
+    }
+
+    .head_menu_content {
+        width: 100%
+    }
+
+    .logo_img {
+        height: 70px;
+        background-size: 100%!important;
+        width: 350px;
+    }
+
+    .head_menu {
+        margin-top: 0;
+        height: 40px
+    }
+
+    #footer,.head_menu_content {
+        height: inherit
+    }
+
+    #menuForm {
+        float: inherit;
+        position: relative;
+        display: none;
+        width: 100%!important;
+        z-index: 100
+    }
+
+    .f-logo,.footer-e-title {
+        float: none
+    }
+
+    #menuForm>table {
+        background-color: #fff;
+        width: 100%;
+        display: inline-block
+    }
+
+    #menuForm>table>tbody>tr,#menuForm>table>tbody>tr>td {
+        width: 100%;
+        display: block
+    }
+
+    #menuForm>table>tbody>tr>td {
+        border: 1px solid #fff
+    }
+
+    #login_form .inputpassword input,#login_form .inputusername input,.pui-accordion .pui-accordion-content-1 {
+        width: 100%
+    }
+
+    .lang-button {
+        top: 0;
+        left: 10px;
+        z-index: 1000;
+        position: absolute;
+        margin-top: 7px
+    }
+
+    .content {
+        margin: 0 auto;
+        margin-top: 30px!important;
+        width: 90%;}
+
+    .login-panel {
+        margin-top: 0;
+        width: 100%
+    }
+
+    .clearfooter {
+        display: none
+    }
+
+    .f-logo,.footer-a-title,.footer-e-title {
+        display: inline-block
+    }
+
+    .content img.login-img {
+        /* width: 300px */
+    }
+
+    #footer {
+        position: relative
+    }
+
+    .footer-right-elemts ul li,.footer-right-elemts ul li a {
+        text-align: center;
+        width: 100%
+    }
+
+    #footer-left-elemts ul {
+        height: inherit;
+        display: inline-block
+    }
+
+
+    .logo-content {
+        padding: 0 10px;
+        width: 93%
+    }
+
+    #container {
+        position: relative;
+        width: 100%
+    }
+
+    .plan,.semester {
+        width: initial
+    }
+
+    .plan #title h3 {
+        font-size: 12px
+    }
+
+    #container-left {
+        width: 100%
+    }
+
+    .container-head-left {
+        margin-left: 10px
+    }
+
+    #container-right {
+        margin-top: 0;
+        top: 0;
+        position: absolute;
+        width: initial
+    }
+
+    #system-content {
+        padding: 0 2.5%;
+        width: 95%
+    }
+
+    #footer-middle-elemts {
+        margin-top: 15px;
+        direction: rtl
+    }
+
+    .footer-a-title {
+        float: none;
+        margin-right: 0
+    }
+
+    .print {
+    }
+
+    .int_page #cssmenu #menu-button::before {
+        border-top: 3px solid #538D00;
+        border-bottom: 3px solid #538D00
+    }
+
+    .int_page #cssmenu #menu-button::after {
+        background: #538D00
+    }
+
+    .ui-dialog {
+        transform: translate(0,-50%);
+        width: 100%!important;
+        left: 0!important
+    }
+
+    .pui-accordion .pui-accordion-content-1,.pui-accordion .pui-accordion-content-1 table tr.tr-has-text {
+        min-width: 100%;
+        width: 100%
+    }
+
+    .pui-accordion .pui-accordion-header a {
+        float: right;
+        width: 90%;
+        padding-left: 0!important;
+        color: #fff;
+        font-weight: 400;
+        margin-right: 10px
+    }
+
+    .pui-accordion .pui-accordion-header .ui-icon {
+        position: absolute;
+        left: .5em;
+        top: 50%;
+        margin-top: -8px;
+        float: left;
+        width: 16px;
+        height: 16px
+    }
+
+    .pui-accordion .pui-accordion-header {
+        height: 32px
+    }
+
+    .logo-text {
+        font-size: 14px!important;}
+
+    #user-info {
+        margin: 0 2.5%;
+        padding: 2.5%;
+        width: 90%
+    }
+    .int-user-info {
+        width: 95% !important;
+        margin: 0 !important;
+    }
+    .myinfo ul li.info-content,.myinfo ul li.info-topic {
+        width: 50%!important
+    }
+
+    #contents>table>tbody>tr>td {
+        width: 100%
+    }
+
+    .int_page #footer {
+        min-height: 273px;
+        height: initial
+    }
+
+    #user-info ul.left,#user-info ul.right {
+        width: 100%!important
+    }
+
+    .applicationDivList,.applicationList,.sp_hours,.studantplan_tabel {
+        margin-top: 10px;
+        overflow: visible;
+        width: 100%
+    ;height: inherit;
+    }
+    .applicationDivList .applicationList {
+        margin-top: 0;
+    }
+
+    #user-info ul.right {
+        padding-bottom: 15px
+    }
+
+    #user-info ul.left {
+        padding-top: 15px;
+        border-top: 1px solid #dedede
+    }
+
+    table.sp_tabel_content tr {
+        display: block
+    ;
+        margin-top: 20px;
+}
+
+    table.sp_tabel_content tr td {
+        border-bottom: 1px solid #dedede;
+        height: inherit;
+        display: block;
+        /* margin-top: 15px
+     */}
+
+    .pui-dropdown label.pui-dropdown-label {
+        width: 25%%!important
+    }
+
+    .arrayChoices,textarea.res_textarea {
+        width: 100%
+    }
+
+    tr.eng_name_res {
+        display: table;
+        float: right;
+        width: 50%
+    }
+
+    tr.eng_name_res td {
+        float: right;
+        text-align: right;
+        display: table-column;
+        width: 100%
+    }
+
+    #user-mail {
+        padding: 2.5%;
+        width: 95%
+    }
+
+    table.ROWGrid {
+        width: 105px
+    }
+
+    .student_data tr {
+        float: right;
+        padding: 2.5%;
+        display: block;
+        width: 45%
+    }
+
+    .student_data tr td {
+        text-align: right;
+        display: table-row
+    }
+
+    .student_data tr:first-child {
+        width: 100%
+    }
+
+    .student_data tr td input,.student_data tr td select {
+        width: 100%;
+        min-width: 50%!important
+    }
+
+    table.reports_info #user-info {
+        width: 95%;
+        margin: 0
+    }
+
+    #buttonVoting,.myinfo .info-photo,.sms_info {
+        width: 100%
+    }
+    table.res-table tr {
+        display: inline-block;
+    }
+
+    table.res-table tr td {
+        width: 100%;
+        display: inline-block;
+    }
+}
+@media (max-width: 1024px) {
+    .content {
+        text-align: center;
+    }
+    .login-panel {
+        display: inline-block;
+        width: 40%;
+    }
+     #menuForm>table>tbody>tr,#menuForm>table>tbody>tr>td {
+        margin-top: 0px;
+        width: 100%;
+        display: block
+    }
+    .pui-accordion .pui-accordion-header {
+    height: 40px;
+    }
+    #footer-conntent, .nav-bar-content {
+        width: 100%;
+    }
+     #user-info ul.left,#user-info ul.right {
+        width: 50%!important
+    }
+    #user-info ul.left {
+        padding-top: 0px;
+        border-top: 0;
+    }
+    .int_page #footer {
+        min-height: 200px;
+        height: initial;
+    }
+    #footer-left-elemts,#footer-middle-elemts,.logo-content {
+        text-align: initial;
+    }
+    #footer-left-elemts, .footer-right-elemts {
+        width: 32.5%;
+    }
+    .footer-right-elemts ul li,.footer-right-elemts ul li a {
+        text-align: initial;
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    #footer-conntent, #footer-left-elemts, #footer-middle-elemts, .footer-copyrights, .footer-right-elemts, .nav-bar-content {
+        width: 100%;
+    }
+    .footer-right-elemts ul li,.footer-right-elemts ul li a {
+        text-align: center !important;
+    }
+    .login-panel {
+        display: inline-block;
+        width: 100%;
+    }
+    #footer-left-elemts,#footer-middle-elemts,.logo-content {
+        text-align: center;
+    }
+    #user-info ul.left, #user-info ul.right {
+        width: 100% !important;
+    }
+}
+
+
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+    table.rowFlow caption { background-image: none; }
+    table.rowFlow > thead { display: none; }
+    table.rowFlow > tbody > tr {
+        width: 100%;
+        display: table;
+        margin-top: 15px;
+    }
+    table.rowFlow > tbody > tr > td {
+        height: initial;
+        min-height: 20px;
+        width: 100%;
+        text-align: right;
+        display: block;
+    }
+    table.rowFlow > tbody > tr > td::before {
+        color: #fff;
+        margin-left: 5%;
+        padding: .6em;
+        background-color: rgba(83, 141, 0, 0.6);
+        content: attr(data-th);
+        display: inline-block;
+        width: 45%;
+    }
+    table.stdschedule.rowFlow > tbody > tr > td:nth-child(8)::before {
+        width: 95%;
+    }
+    table.rowFlow > tbody > tr > td > span {
+        font-size: 13px;
+        display: inline-flex;
+    }
+    table.rowFlow2 caption { background-image: none; }
+    table.rowFlow2 thead { display: none; }
+    table.rowFlow2 > tbody > tr {
+        width: 100%;
+        display: table;
+        margin-top: 15px;
+    }
+    table.rowFlow2 > tbody > tr > td {
+        height: initial;
+        min-height: 20px;
+        width: 100%;
+        text-align: right;
+        display: block;
+    }
+    table.rowFlow2 > tbody > tr > td::before {
+        color: #fff;
+        margin-left: 5%;
+        padding: .6em;
+        background-color: rgba(83, 141, 0, 0.6);
+        content: attr(data-th);
+        display: inline-block;
+        width: 45%;
+    }
+    table.rowFlow2 > tbody > tr > td > span {
+        display: inline-flex;
+    }
+    .staff_stdSearchBean {
+        width: 100%;
+        padding: 0 0px;
+    }
+    .staff_stdSearchBean .right{
+        width: 92.2%;
+        padding: 0 3.9%;
+    }
+}
+.fullwidth {
+    width: 100% !important;
+}
